@@ -1,0 +1,250 @@
+body {
+    width: 400px;  /* max: 800px */
+    height: 250px; /* max: 600px */
+    /* border: 5px solid red; */
+    /* outline: 20px solid rgb(234, 234, 234); */
+}
+.border{
+    /* z-index: 2; */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 8px solid rgb(234, 234, 234); 
+}
+.hidden{
+    pointer-events: none;
+    opacity: 0;
+}
+#def-cover{
+    /* z-index: 1; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(133, 133, 133);
+}
+#def-cover h4{
+    padding: 5px;
+    color: rgb(129, 129, 129);
+    /* z-index: 3; */
+    cursor: default;
+}
+#def-cover h4:hover{
+    text-decoration: underline;
+}
+h2{
+    font-size: 10px;
+    padding: 10px 15px 10px 15px;
+    /* background-color: aquamarine; */
+    text-align: center;
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 2px 1px #d5d5d5; */
+    box-shadow: 0px 0px 2px 1px #bdbdbd;
+    margin: 0px;
+}
+#header {
+    z-index: 1;
+    position: fixed;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: aqua; */
+}
+#header-left {
+    float: left;
+    margin-left: 15px;
+}
+#header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    float: right;
+    margin-right: 15px;
+}
+button {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* vertical-align: top; */
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: rgb(213, 213, 213);
+}
+button:active{
+    background-color: rgb(190, 190, 190);
+}
+.header-button img {
+    display: block;
+    height: 20px;  
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    /* opacity: 0.7; */
+}
+.header-button img {
+    display: block;
+    height: 20px;  
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    /* opacity: 0.7; */
+}
+#word-area {
+    /* pointer-events: none; */
+    position: fixed;
+    top: 22px;
+    left:0px;
+    text-align: center;
+    /* margin-left: 35px;
+    margin-right: 35px; */
+    height: 192px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    /* background: linear-gradient(to top, red 1px, transparent, transparent,transparent,transparent,transparent); */
+    /* background: linear-gradient(to top, red 1%, transparent 10%, transparent 20%); */
+}
+#word-area h1{
+    margin-bottom: 10px;
+}
+#overlay{
+    pointer-events: none;
+    /* z-index: 2; */
+    position: fixed;
+    top: 30px;
+    left:8px;
+    height: 180px;
+    width: 400px;
+    /* background: linear-gradient(to top, rgb(234, 234, 234) 1px, transparent, transparent,transparent,transparent,transparent); */
+}
+.shadow{
+    background: linear-gradient(to top, rgb(234, 234, 234) 1px, transparent, transparent,transparent,transparent,transparent);
+}
+#definition-area{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+#definition-section{
+    width: 350px;
+    /* margin-left: 35px; */
+    text-align: left;
+    /* background-color: aqua; */
+}
+.part-of-speech{
+    color: rgb(102, 102, 102);
+}
+.def-ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    /* padding-left: 37px; */
+    width: 350px;
+    /* background-color: red; */
+    text-align: left;
+}
+li{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#buttons {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 22px;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+}
+#buttons h2{
+    display: inline;
+    /* margin-bottom: 20px; */
+}
+#buttons button {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+}
+.footer-button img {
+    display: block;
+    height: 20px;  
+    width: 20px;
+    padding: 0;
+    margin: 0;
+}
+.invisible-button{
+    opacity: 0;
+    pointer-events: none;
+}
+#dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    border: 8px solid rgb(234, 234, 234); 
+    gap: 30px;
+
+}
+#dialog-title{
+    width: 100%;
+    text-align: center;
+    /* padding-bottom: 25x; */
+    /* background-color: aqua; */
+}
+#dialog-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#dialog-buttons button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    /* background-color: aqua; */
+}
+#yes-button{
+    /* background-color: rgb(241, 241, 241); */
+    color:rgb(156, 156, 156);
+}
+#yes-button:hover{
+    color: black;
+}

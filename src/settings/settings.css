@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+#header{
+  /* box-sizing: border-box; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background-color: rgb(234, 234, 234); */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 20px;
+  /* border-bottom: 6px solid rgb(201, 201, 201); */
+  box-shadow:inset 0px -8px 0px 0px rgb(234, 234, 234);
+}
+#header img{
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  /* box-shadow: 0px 0px 2px 1px #bdbdbd; */
+}
+#header h3{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* background-color: aqua; */
+  /* border-bottom: 8px solid rgb(0, 0, 0); */
+}
+#header button{
+  all: unset;
+  /* background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none; */
+  cursor: grab;
+}
+#header a{
+  text-decoration: none;
+  color: black;
+}
+.currentPage{
+  border-bottom: 8px solid rgb(0, 0, 0);
+  color: black;
+}
+.notCurrentPage{
+  border-bottom: 8px solid rgb(234, 234, 234);
+  color: rgb(144, 144, 144);
+}
+#settings-content{
+  margin-top: 60px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  /* top: 80px; */
+  width: 100%;
+  /* height: calc(100% - 130px); */
+  /* background-color: aqua; */
+  padding-left: 25px;
+}
+#word-area-container{
+  flex-grow: 1;
+  margin-bottom: 25px;
+  width: calc(100% - 50px);
+  display: flex;
+  gap: 20px;
+  /* background-color: red; */
+}
+.uninteractable{
+  pointer-events: none;
+}
+#word-area-buttons{
+  /* flex-grow: 2; */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 20px;
+}
+#word-area-buttons h4{
+  width: 150px;
+}
+#word-area{
+  /* margin-left: 5px; */
+  /* margin-right: 20px; */
+  font-family: system-ui, sans-serif;
+  padding: 5px;
+  margin-bottom: 25px;
+  width: calc(100% - 50px);
+  width: 55%;
+  min-width: 300px;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  resize: none;
+  overflow-y: scroll;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: rgb(234, 234, 234);
+  white-space: pre;
+}
+#word-area:focus-visible{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+#text-area-wrapper{
+  position: relative;
+  width:100%;
+  height: 100%;
+  width: 55%;
+  min-width: 300px;
+  height: 100%;
+  margin-bottom: 25px;
+  display: block;
+}
+
+#word-area{
+  line-height: 1.2;
+  position: absolute;
+  top:0;
+  left:0;
+  font-family: system-ui, sans-serif;
+  padding: 5px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  resize: none;
+  overflow-y: scroll;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: rgb(234, 234, 234);
+  white-space: pre;
+}
+#word-area:focus-visible{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.numbers{
+  line-height: 1.2;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  background-color: transparent;
+  font-family: system-ui, sans-serif;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: auto;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+  white-space: pre;
+  text-align: right;
+  pointer-events: none;
+}
+.numbers::-webkit-scrollbar {
+  display: none;
+}
+
+#word-list-explanation{
+  max-width: 50%;
+}
+::spelling-error {
+  /* color: black; */
+  text-decoration: dotted rgb(131, 131, 131) underline;
+  stroke-linecap: round;
+}
+.settings-line{
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  width: calc(100% - 50px);
+  height: 40;
+  margin-top: 10px;
+  /* border-bottom: 4px solid rgb(234, 234, 234); */
+  /* background-color: aqua; */
+}
+.sub-setting{
+  margin-left: 35px;
+}
+.setting-explanation{
+  color:#a5a5a5;
+}
+
+
+[type=checkbox] {
+  /* color: dodgerblue; */
+  vertical-align: middle;
+  appearance: none;
+  background: none;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  transition: background 300ms;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  margin-left: 0;
+}
+[type=checkbox]::before {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  /* border: 0; */
+  background-color: transparent;
+  background-size: contain;
+  /* box-shadow: inset 0 0 0 1px #CCD3D8; */
+}
+/* [type=checkbox]:checked {
+  background-color: red;
+} */
+/* [type=checkbox]:checked::before {
+  margin-left: 0;
+  background-color: red;
+} */
+[type=checkbox]:disabled {
+  background-color: #CCD3D8;
+  opacity: 0.84;
+  cursor: not-allowed;
+}
+
+
+[type=number] {
+  /* color: dodgerblue; */
+  vertical-align: middle;
+  appearance: none;
+  background: none;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  height: 20px;
+  width: 50px;
+  border: 1px solid black;
+}
+[type=nummber]::before {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  /* border: 0; */
+  background-color: transparent;
+  background-size: contain;
+  /* box-shadow: inset 0 0 0 1px #CCD3D8; */
+}
+[type=checkbox]:checked {
+  background-color: currentcolor;
+}
+[type=checkbox]:disabled {
+  background-color: #CCD3D8;
+  opacity: 0.84;
+  cursor: not-allowed;
+}
+.button-clickable{
+  color: black;
+  border-radius: 20px;
+  background-color: rgb(234, 234, 234);
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+.button-clickable:hover{
+  background-color: rgb(214, 214, 214);
+}
+.button-clickable:active{
+  background-color: rgb(190,190,190);
+}
+.button-not-clickable{
+  color:#cfcfcf;
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+.button-clickable h3, .button-not-clickable h3{
+  padding: 0px;
+  display: inline;
+  /* color: red; */
+}

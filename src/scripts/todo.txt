@@ -1,0 +1,3 @@
+all to lowercase - for consistency and for equality checks
+refill queue after adding word?
+Fix includes site bug => x.com triggers Netflix.com

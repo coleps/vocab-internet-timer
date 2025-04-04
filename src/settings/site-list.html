@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="settings.css">
+  </head>
+  <body>
+    <div id="header">
+      <img src="../images/icon-128.png">
+      <button id="settings-link"><h3 class="notCurrentPage">Settings</h3></button>
+      <button id="word-list-link"><h3 class="notCurrentPage">Word List</h3></button>
+      <h3 class="currentPage">Site List</h3>
+    </div>
+    <div id="settings-content">
+      <h4 id="word-list-explanation">If you want your time on a website to contribute to the internet timer, add it here. Write one site per line. <br> If no sites are listed, all websites will contribute to the timer.</h4>
+      <div id="word-area-container">
+        <div id="text-area-wrapper">
+          <textarea id="word-area" placeholder="Example: youtube.com" spellcheck="true"></textarea>
+
+        </div>
+        <div id="word-area-buttons">
+          <button class="button-not-clickable" id="save-words"><h3>Save</h3></button>
+        </div>
+      </div>
+    </div> 
+    <script src="../scripts/sitelist.js" type="module"></script>
+    <script src="../scripts/links.js" type="module"></script>
+  </body>
+</html>

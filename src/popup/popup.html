@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <div class="border"></div>
+    <div id="header">
+      <div id="header-left">
+        <h2 id="word-number">1/2</h2>
+      </div>
+      <div id="header-right">
+        <button id="timer-button" class="img-button header-button" title="turn internet timer on/off"><img src="../images/time.png"></button>
+        <button id="delete-button" class="img-button header-button" title="delete word"><img src="../images/trash.png"></button>
+        <button id="settings-button" class="img-button header-button" title="settings"><img src="../images/settings.png"></button>
+      </div>
+      
+    </div>
+    <div id="word-area">
+      <div id="def-cover"><h4>Show Definition</h4></div>
+      <h1 id="title">toilette</h1>
+      <div id="definition-area">
+        <p id="definition" class="def-ul">The process of washing oneself, dressing, and attending to one's appearance.</p>
+      </div>
+    </div>
+    <!-- <div id="overlay"></div> -->
+    <div id="buttons">
+      <!-- <h2>bad</h2> -->
+      <!-- <h2>good</h2> -->
+      <!-- <h2>trash</h2> -->
+      <!-- <button id="bad-button" class="footer-button" title=""><img src="../images/cross2.png"></button>
+      <button id="good-button" class="footer-button" title=""><img src="../images/circle1.png"></button> -->
+      <!-- <button id="trash-button" class="footer-button" title=""><img src="../images/trash.png"></button> -->
+      <button id="next-button" class="img-button footer-button" title="next word" "><img src="../images/next4.png"></button>
+    </div>
+    <template id="definition-section-template">
+      <div id="definition-section">
+        <p class="part-of-speech"></p>
+        <!-- <ul></ul> -->
+      </div>
+    </template>
+    <template id="dialog-template">
+      <div id="dialog">
+        <div id="dialog-title"><h1>Delete from word list?</h1></div>
+        <div id="dialog-buttons"><button id="no-button"><p>No</p></button><button id="yes-button"><p>Yes</p></button></div>
+      </div>
+    </template>
+    <script src="../scripts/popup.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="settings.css">
+  </head>
+  <body>
+    <div id="header">
+      <img src="../images/icon-128.png">
+      <h3 class="currentPage">Settings</h3>
+      <button id="word-list-link"><h3 class="notCurrentPage">Word List</h3></button>
+      <button id="site-list-link"><h3 class="notCurrentPage">Site List</h3></button>
+    </div>
+    <div id="settings-content">
+      <div class="settings-line">
+        <h4>Internet Timer Length (minutes)</h4>
+        <input type="number" id="timer-length" min="1" value="1"/>
+        <div class="setting-explanation"><h4>When you have spent this amount of time on whitelisted websites, the extension will pop up</h4></div>
+      </div>
+      <div class="settings-line">
+        <input type="checkbox" id="show-fixed-num">
+        <!-- <span class="checkmark"></span> -->
+        <h4>Show Fixed Number of Words on Popup</h4>
+        <div class="setting-explanation"><h4>If you want to review a set number of words each time, keep this option checked</h4></div>
+      </div>
+      <div class="settings-line sub-setting">
+        <h4>Number of Words to Show</h4>
+        <input type="number" id="num-words" min="1" max="20" value="1"/>
+        <div class="setting-explanation"><h4>Number of words to review each time</h4></div>
+      </div>
+      <div class="settings-line">
+        <input type="checkbox" id="hide-def-checkbox">
+        <!-- <span class="checkmark"></span> -->
+        <h4>Hide Definitions Initially</h4>
+        <div class="setting-explanation"><h4>Enable this setting to promote active recall</h4></div>
+      </div>
+      <div class="settings-line">
+        <h4>Generated Definitions Language</h4><select><option value="en">English</option></select>
+        <div class="setting-explanation"><h4>Definitions are automatically generated unless you add your own</h4></div>
+      </div>
+    </div> 
+    <script src="../scripts/settings.js" type="module"></script>
+    <script src="../scripts/links.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="settings.css">
+  </head>
+  <body>
+    <div id="header">
+      <img src="../images/icon-128.png">
+      <button id="settings-link"><h3 class="notCurrentPage">Settings</h3></button>
+      <h3 class="currentPage">Word List</h3>
+      <button id="site-list-link"><h3 class="notCurrentPage">Site List</h3></button>
+    </div>
+    <div id="settings-content">
+      <h4 id="word-list-explanation">List of vocab words. Write one word per line. <br> If you want to provide your own definition, include it after a colon. Definitions are automatically generated otherwise.</h4>
+      <div id="word-area-container">
+        <div id="text-area-wrapper">
+          <textarea id="word-area" placeholder="Write words here..." spellcheck="true"></textarea>
+          <textarea class="numbers"></textarea>
+
+        </div>
+        <div id="word-area-buttons">
+          <button class="button-not-clickable" id="save-words"><h3>Save</h3></button>
+          <!-- <h4>NOTE: Words added from the right-click menu option wait until this setting page is closed to be added to the word list</h4> -->
+        </div>
+      </div>
+    </div> 
+    <script src="../scripts/wordlist.js" type="module"></script>
+    <script src="../scripts/links.js" type="module"></script>
+  </body>
+</html>
